@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\JobController;
+use Illuminate\Support\Facades\Artisan;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,7 +21,7 @@ use App\Http\Controllers\JobController;
 
 
 Route::get('/test', function(){
-    return view('emailNotif');
+    Artisan::call('storage:link');
 });
 
 // // Route untuk client start
