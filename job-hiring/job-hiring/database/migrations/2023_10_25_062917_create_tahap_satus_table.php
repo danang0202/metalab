@@ -1,0 +1,37 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('tahap_satus', function (Blueprint $table) {
+            $table->id();
+            $table->string('nik')->unique;
+            $table->string('placeOfBirth');
+            $table->date('dateOfBirth');
+            $table->text('address');
+            $table->string('fileKTP');
+            $table->string('fileKK');
+            $table->string('fileCV');
+            $table->string('fileSertifikat');
+            $table->string('fileIjazah');
+            $table->string('status')->default('Pending');
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('tahap_satus');
+    }
+};
