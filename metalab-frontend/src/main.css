@@ -1,0 +1,806 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    --primary: #00A3E1 !important;
+    /* Ganti dengan warna primer yang Anda inginkan */
+    --primary-rgb: 0, 163, 225 !important;
+    /* Ganti dengan warna primer yang Anda inginkan */
+    --primary-grey: #f7f7f8;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    font-size: 99.5%;
+}
+
+
+.no-border {
+    border: none !important;
+}
+
+.bg-semi-transparent {
+    background: rgba(255, 255, 255, 0.6) !important;
+}
+
+.bg-blue {
+    background: #00A3E1 !important;
+}
+
+.bg-blue-t {
+    background: rgba(0, 163, 225, 0.15) !important;
+}
+
+
+.bg-green {
+    background: #1AC073 !important;
+}
+
+.bg-purple {
+    background: #702F8A !important;
+}
+
+.bg-clear {
+    background: #fff;
+}
+
+.bg-orange {
+    background: #FA9370 !important;
+}
+
+.bg-secondary-admin {
+    background: #eee;
+}
+
+.bg-primary-grey {
+    background: var(--primary-grey) !important;
+}
+
+.bg-green-t {
+    background: rgba(26, 192, 115, 0.15) !important;
+}
+
+.bg-green-notif {
+    background: rgba(26, 192, 115, 0.3) !important;
+}
+
+
+.bg-danger-t {
+    background: rgba(242, 5, 5, 0.15) !important;
+}
+
+.bg-danger-notif {
+    background: rgba(242, 5, 5, 0.3) !important;
+}
+
+
+.bg-orange-t {
+    background: rgba(2550, 147, 112, 0.15) !important;
+}
+
+.bg-purple-t {
+    background: rgba(112, 47, 138, 0.15) !important;
+}
+
+.bg-coba {
+    /* background: linear-gradient(to right, #00a1e171 0%, white 30%, white 70%, #00a1e173 100%); */
+
+}
+
+.text-blue {
+    color: #00A3E1 !important;
+}
+
+.text-purple {
+    color: #702F8A !important;
+}
+
+.text-orange {
+    color: #FA9370 !important;
+}
+
+.text-green {
+    color: #1AC073 !important;
+}
+
+.fs-7 {
+    font-size: 0.7rem !important;
+}
+
+.fs-8 {
+    font-size: .8rem !important;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fromRight {
+    from {
+        right: -100%;
+    }
+
+    to {
+        right: 0rem;
+    }
+}
+
+.from-right {
+    animation: fromRight 0.5s ease-in-out;
+}
+
+.smooth-transition {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.hover-op1:hover {
+    background-color: #00A3E1 !important;
+    color: #fff !important;
+}
+
+.hover-op1:hover i{
+    color:  #fff !important;
+}
+
+.hover-blue:hover {
+    color: #00A3E1 !important;
+}
+
+.hover-bg-blue:hover{
+    background: #00A3E1 !important;
+    color: #fff !important;
+    cursor: pointer;
+}
+
+.hover-bg-danger:hover{
+    background: rgba(242, 5, 5) !important;
+    color: #fff !important;
+    cursor: pointer;
+
+}
+
+.hover-bg-orange:hover {
+    background: #FA9370 !important;
+    color: #fff !important;
+    cursor: pointer;
+}
+
+.hover-op6:hover {
+    opacity: .6;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.btn-outline-warning {
+    background: #FFF !important;
+    color: #FA9370 !important;
+    border: 1px solid #FA9370 !important;
+}
+
+.btn-outline-warning:hover,
+.btn-outline-warning:hover i {
+    background: #FA9370 !important;
+    outline: #FA9370 !important;
+    color: black !important;
+}
+
+.btn-primary {
+    background: #00A3E1 !important;
+}
+
+.btn-primary:hover {
+    opacity: 0.8 !important;
+}
+
+.btn-warning {
+    background: #FA9370 !important;
+}
+
+.btn-warning:hover {
+    opacity: 0.8 !important;
+}
+
+.text-bg-primary {
+    background: #00A3E1 !important;
+}
+
+/* Style untuk wizard progess stage beranda */
+.step-wizard-list {
+    transform: translateX(-5%);
+    list-style-type: none;
+}
+
+.step-wizard-item {
+    flex-basis: 0;
+    flex-grow: 1;
+    width: 200%;
+}
+
+.step-wizard-item+.step-wizard-item:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    background: #00A3E1;
+    height: 2px;
+    transform: translateX(12%);
+    z-index: -10;
+}
+
+
+.Full+.Full:after,
+.Part+.Part:after {
+    width: 25%;
+    transform: translate(-67%, -100%) !important;
+}
+
+.Freelance+.Freelance:after {
+    background: #00A3E1;
+    width: 17% !important;
+    transform: translate(-75%, -100%) !important;
+}
+
+.progess-count {
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: 600;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    color: transparent;
+    /* transform: translate(-85%, 0%); */
+}
+
+.progess-count:after {
+    content: "";
+    height: 25px;
+    width: 25px;
+    background: #00A3E1;
+    position: absolute;
+    left: 50%;
+    right: 60%;
+    transform: translate(-50%, -0%);
+    border-radius: 50%;
+    z-index: -10;
+}
+
+.progess-count:before {
+    content: "";
+    height: 7px;
+    width: 13px;
+    border-left: 3px solid #fff;
+    border-bottom: 2px solid #fff;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    transform-origin: center center;
+}
+
+.current-item .progess-count:before,
+.current-item~.step-wizard-item .progess-count:before {
+    display: none;
+}
+
+.current-item~.step-wizard-item .progess-count:after {
+    height: 20px;
+    width: 20px;
+}
+
+.current-item~.step-wizard-item .progress-label {
+    opacity: 0.5;
+}
+
+.current-item .progess-count:after {
+    background: #fff;
+    border: 2px solid #00A3E1;
+}
+
+.current-item .progess-count {
+    color: #00A3E1;
+}
+
+.progress-label {
+    margin-top: .2rem;
+}
+
+.nav-link.text-blue {
+    color: #00A3E1;
+    /* Anda juga dapat menentukan warna teks jika diperlukan */
+}
+
+a.nav-link:hover {
+    color: #FA9370;
+}
+
+/* CSS tambahan beranda talent */
+
+@media (max-width: 991px) {
+    .profile-container {
+        margin-bottom: 1rem;
+    }
+
+    .profile-box {
+        height: 9rem !important;
+    }
+
+    .card-container {
+        transform: translateY(0rem) !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-box {
+        height: 10rem !important;
+    }
+
+    .Full+.Full:after,
+    .Part+.Part:after {
+        width: 22% !important;
+        transform: translate(-75%, -100%) !important;
+    }
+
+    .Freelance+.Freelance:after {
+        background: #00A3E1;
+        width: 15% !important;
+        transform: translate(-82%, -100%) !important;
+    }
+}
+
+/* END */
+
+
+/* CSS untuk daerah admin */
+.admin-nav-active {
+    background: linear-gradient(to right, #00A3E1 1%, #ffffff 100%);
+}
+
+.admin-nav-active a i,
+.admin-nav-active a span {
+    color: #FFF !important;
+}
+
+.admin-nav-item:hover {
+    background: linear-gradient(to right, #FA9370 1%, #ffffff 100%);
+}
+
+.show-sidebar {
+    display: block;
+}
+
+.hidden-sidebar {
+    display: none;
+}
+
+.hamburger-menu {
+    cursor: pointer;
+}
+
+.hamburger-menu:hover {
+    color: #00A3E1;
+    transition: color .2s ease-in-out;
+}
+
+.table-container {
+    min-height: 27rem !important;
+    max-height: 27rem !important;
+    overflow-y: scroll;
+}
+
+.table-container table {
+    border-collapse: separate !important;
+    border-spacing: 0rem .5rem !important;
+}
+
+.table-container tbody tr td {
+    background: #fff !important;
+    padding: .5rem 1rem;
+    margin-top: 5rem !important;
+}
+
+.table-container tbody tr td:first-child {
+    border-top-left-radius: .8rem;
+    border-bottom-left-radius: .8rem;
+}
+
+.table-container tbody tr td:last-child {
+    border-top-right-radius: .8rem;
+    border-bottom-right-radius: .8rem;
+}
+
+.table-container thead tr th {
+    background: #eee;
+}
+
+.tabel-info-talent td {
+    line-height: 2rem;
+}
+
+.hr-color {
+    color: #702F8A;
+}
+
+@media (max-width: 991px) {
+    .table {
+        /* max-width: 34rem; */
+        overflow-x: scroll;
+    }
+
+    .table-talent-container {
+        height: 20rem !important;
+    }
+}
+
+/* Untuk scroll bar vertikal */
+::-webkit-scrollbar {
+    width: 1px;
+    /* Ubah lebar sesuai kebutuhan */
+}
+
+/* Untuk thumb (bagian yang dapat digerakkan) pada scroll bar vertikal */
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    /* Warna thumb */
+    border-radius: 4px;
+    /* Bentuk border radius */
+}
+
+/* Untuk scroll bar horizontal */
+::-webkit-scrollbar:horizontal {
+    height: 1px;
+    /* Ubah tinggi sesuai kebutuhan */
+}
+
+/* Untuk thumb (bagian yang dapat digerakkan) pada scroll bar horizontal */
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: #888;
+    /* Warna thumb */
+    border-radius: 4px;
+    /* Bentuk border radius */
+}
+
+/* Css halaman jobs talent */
+.dng-card-job:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #00A3E1;
+    columns: #fdfdfd;
+    border: #00A3E1;
+}
+
+select option:hover {
+    background-color: #00A3E1 !important;
+}
+
+.table-info-job-detail {
+    border-collapse: collapse;
+}
+
+.table-info-job-detail tr {
+    line-height: 1rem;
+}
+
+.table-info-job-detail .left {
+    width: 4.4rem;
+}
+
+/* CSS untuk tampilan perangkat seluler */
+@media (max-width: 768px) {
+    .step-wizard-list {
+        transform: translateX(-2%);
+    }
+
+    .step-wizard-item+.step-wizard-item:after {
+        width: 75%;
+    }
+
+    .Freelance+.Freelance:after {
+        width: 70%;
+    }
+
+    .progess-count {
+        transform: translate(0%, 0%);
+    }
+
+    .table-info-job-detail .left {
+        width: 7rem;
+    }
+
+    .table-info-job-detail .salary,
+    .table-info-job-detail .contract {
+        font-size: .8rem;
+    }
+
+    .stage-img {
+        width: 100% !important;
+    }
+}
+
+
+/* Css untuk buton radio pemilihan tanggal user */
+.radio-danger:checked+label {
+    background-color: rgba(255, 0, 0, 0.5) !important;
+    color: #fff !important;
+}
+
+.radio-safe:checked+label {
+    background-color: #1AC073 !important;
+    color: #fff !important;
+}
+
+/* End */
+
+.admin {
+    width: 100vw;
+    overflow-y: scroll !important;
+}
+
+
+/* CSS untuk footer start */
+.footer-container {
+    min-height: 276px;
+    /* background-image: url('/public/images/metalab-logo-only.png'); */
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+    /* padding-left: 50px; */
+}
+
+.logo-registered {
+    height: 17px;
+    width: auto;
+}
+
+.social-icon {
+    background: rgba(112, 47, 138, 0.1);
+    height: 2.2em;
+    width: 2.2em;
+}
+
+.icon-footer {
+    color: #702f8a;
+}
+
+/* CSS untuk footer end */
+
+/* CSS Modal  */
+
+.custom-modal-background {
+    background: url('../public/images/modal-bg.png') repeat-x center center;
+    background-size: cover;
+}
+
+/* end */
+
+.bg-image {
+    background: url('../public/images/modal-bg.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+    min-height: 276px;
+}
+
+@media (max-width: 768px) {
+    .bg-image {
+        background-position: unset;
+        background-size: unset;
+    }
+}
+
+/* Css untuk calander start */
+.fc {
+    width: 100% !important;
+    /* background: red; */
+
+}
+
+.fc-toolbar-title {
+    font-size: 1.3rem !important;
+    font-weight: bold;
+}
+
+.fc-col-header-cell-cushion {
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+}
+
+.fc-timegrid-slot-label-cushion {
+    text-decoration: none;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.fc-timegrid-slot-label {
+    outline: none !important;
+    border: none !important;
+}
+
+.fc-col-header-cell,
+.fc-timegrid-axis {
+    background: #FA9370;
+    color: #fff;
+    outline: none !important;
+    border-radius: 0.3rem;
+    border: none !important;
+}
+
+.fc-event {
+    border-color: #FA9370;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    background: #FA9370;
+}
+
+.fc-event-time {
+    color: #fff;
+    font-weight: 600;
+}
+
+.fc-event-title {
+    color: #fff;
+    font-weight: 600;
+}
+
+.fc-event-main,
+.fc-event-main-frame {
+    background: #FA9370;
+    outline: none !important;
+}
+
+.fc-daygrid-day-number {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.fc-button-primary {
+    font-weight: 700 !important;
+    background: #FA9370 !important;
+    border: none !important;
+    outline: none !important;
+}
+
+.fc-timegrid-axis {
+    background: transparent !important;
+    border: none !important;
+}
+
+.fc-timegrid-axis-frame {
+    display: none !important;
+}
+
+.fc-today-button {
+    background: #FA9370 !important;
+    border: none !important;
+    outline: none !important;
+    text-transform: capitalize !important;
+}
+
+.fc-timeGridWeek-button,
+.fc-dayGridMonth-button {
+    background: rgba(250, 147, 112, 0.6) !important;
+    border: none !important;
+    outline: none !important;
+    text-transform: capitalize !important;
+}
+
+.fc-button-active {
+    background: #FA9370 !important;
+}
+
+.fc-timeGridWeek-button {
+    text-transform: capitalize;
+}
+
+.fc-button-primary:hover {
+    opacity: 0.75;
+}
+
+/* CSS untuk calender end */
+
+/* CSS for profile page talent start */
+.umr-container {
+    background: var(--bs-body-bg);
+    border-radius: 20px;
+}
+
+.umr-subheading {
+    text-align: left;
+}
+
+.text-input {
+    background: #fafafb !important;
+}
+
+.profile-pic {
+    color: transparent;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.profile-pic input {
+    display: none;
+}
+
+.profile-pic img {
+    position: absolute;
+    object-fit: cover;
+    width: 165px;
+    height: 165px;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.35);
+    border-radius: 100px;
+    z-index: 0;
+    border: solid #888888 1px;
+}
+
+.profile-pic .label {
+    cursor: pointer;
+    height: 165px;
+    width: 165px;
+}
+
+.profile-pic:hover .label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10000;
+    color: #fafafa;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 100px;
+    margin-bottom: 0;
+}
+
+.profile-pic span {
+    display: inline-flex;
+    padding: 0.2em;
+    height: 2em;
+}
+
+.name {
+    background: #fafafb;
+    width: fit-content;
+}
+
+/* CSS for profile talent END */
+
+/* Pengaturan icon message */
+.icon-message-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00A3E1; /* Warna latar belakang */
+    color: #fff; /* Warna teks */
+    border-radius: 50%; /* Agar bentuknya bulat */
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style untuk ikon pesan (gunakan ikon FontAwesome sebagai contoh) */
+.icon-message {
+    font-size: 24px;
+}
+
+/* Stil tambahan untuk efek hover */
+.icon-message-container:hover {
+    background-color: #00A3E1; 
+    opacity: .6;/* Warna latar belakang pada hover */
+}
+/* end */

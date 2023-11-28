@@ -1,0 +1,70 @@
+/* Tampilan HP */
+.box-stampel {
+    z-index: -1;
+    transform: translate(25rem, 0rem);
+}
+
+@media (max-width: 991px) {
+    .box-stampel {
+        transform: translate(19rem, 0rem);
+    }
+
+    .hiring-detail-container .company-logo img{
+        width: 5.5 !important;
+        height: 5.5rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .filter-navigation .box i {
+        display: none;
+    }
+
+    .filter-navigation .box h6 {
+        font-size: .7rem;
+    }
+
+    .progress-card-img img {
+        width: 4.5rem !important;
+        height: 5rem !important;
+    }
+
+    .job-name {
+        font-size: 1rem;
+    }
+
+    .company-name {
+        font-size: .8rem !important;
+    }
+
+    .card-container .badge,   .hiring-detail-container .badge{
+        font-size: .6rem !important;
+    }
+
+    .btn-detail {
+        font-size: .6rem !important;
+    }
+
+    .box-stampel img {
+        width: 5rem !important;
+    }
+
+    .box-stampel {
+        transform: translate(10rem, 0rem);
+    }
+
+    /* Bagian hiring detail */
+
+    .hiring-detail-container .company-logo img{
+        width: 4.5rem !important;
+        height: 4.5rem !important;
+    }
+
+    .hiring-detail-container h5{
+        font-size: 1rem;
+    }
+
+    .hiring-detail-container p{
+        font-size: .8rem;
+    }
+}
